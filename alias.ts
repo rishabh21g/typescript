@@ -15,6 +15,23 @@ const user : User = {
     
 }
 
-console.log(user?.firstName + user.id)
+// console.log(user?.firstName + user.id)
 
 
+function userData (user : User): User{  // by default ts return void
+    return user
+}
+
+// example of void return
+
+function greet(name : string): void{
+    console.log("Hello!" + " " + name)
+}
+
+
+type rollno = number | string
+
+const rn: rollno = 12 // "wow" 
+
+
+// ALIAS IS SHAPE OF OBJECT IN SIMPLE WORD
